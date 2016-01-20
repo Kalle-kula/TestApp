@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 using Xamarin.Forms;
 
-namespace TestAppProjekt.HomeScreen
+namespace TestAppProjekt.Meny_2
 {
-    public partial class EmplyeesPage : ContentPage
+    public partial class Employees : ContentPage
     {
-        public EmplyeesPage()
+        public Employees()
         {
             InitializeComponent();
         }

@@ -37,11 +37,17 @@
   <ItemGroup>
     <Compile Include="App.cs" />
     <Compile Include="Fakes\FakeNews.cs" />
+    <Compile Include="Meny 2\Employees.xaml.cs">
+      <DependentUpon>Employees.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Properties\Annotations.cs" />
     <Compile Include="ViewModel\NewsListViewModel.cs" />
     <Compile Include="ViewModel\NewsViewModel.cs" />
-    <Compile Include="View\EmplyeesPage.xaml.cs">
-      <DependentUpon>EmplyeesPage.xaml</DependentUpon>
+    <Compile Include="View\EmployeesPage.xaml.cs">
+      <DependentUpon>EmployeesPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\EmployeeView.xaml.cs">
+      <DependentUpon>EmployeeView.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\HomeScreen.xaml.cs">
       <DependentUpon>HomeScreen.xaml</DependentUpon>
@@ -63,6 +69,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Meny 1\SubLink.cs" />
     <Compile Include="Services\NewsGenerator.cs" />
+    <Compile Include="View\HomeScreenMenu.xaml.cs">
+      <DependentUpon>HomeScreenMenu.xaml</DependentUpon>
+    </Compile>
     <Compile Include="View\NewsDetails.xaml.cs">
       <DependentUpon>NewsDetails.xaml</DependentUpon>
     </Compile>
@@ -84,13 +93,31 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="View\EmplyeesPage.xaml">
+    <EmbeddedResource Include="View\NewsDetails.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="View\NewsDetails.xaml">
+    <EmbeddedResource Include="View\EmployeesPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Meny 2\Employees.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="View\HomeScreenMenu.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="View\EmployeeView.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>

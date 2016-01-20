@@ -5,6 +5,7 @@ using System.Text;
 using Xamarin.Forms; 
 using TestAppProjekt.Meny_2;
 using TestAppProjekt.Meny_3;
+using TestAppProjekt.View;
 
 namespace TestAppProjekt
 {
@@ -15,7 +16,7 @@ namespace TestAppProjekt
         {
             MasterDetailPage = new MasterDetailPage
             {
-                Master = new MenuPage(),
+                Master = new HomeScreenMenu(),
 
                 //Detail = new NavigationPage(new LinkPage("A")),
                 Detail = new NavigationPage(new View.HomeScreen()),

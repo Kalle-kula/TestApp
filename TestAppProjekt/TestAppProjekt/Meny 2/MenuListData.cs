@@ -15,13 +15,12 @@ namespace TestAppProjekt.Meny_2
             {
                 Title = "Home",
                 TargeType = typeof(View.HomeScreen)
-                
             });
 
             this.Add(new MenuItem()
             {
                 Title = "Employees",
-                TargeType = typeof(View.HomeScreen)
+                TargeType = typeof(Employees)
             });
 
             this.Add(new MenuItem()

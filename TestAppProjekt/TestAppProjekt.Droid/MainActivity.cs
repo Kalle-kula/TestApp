@@ -2,6 +2,7 @@
 
 using Android.App;
 using Android.Content.PM;
+using Android.Graphics.Drawables;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
@@ -17,7 +18,10 @@ namespace TestAppProjekt.Droid
             base.OnCreate(bundle);
 
             global::Xamarin.Forms.Forms.Init(this, bundle);
+            //Tar bort den blåa xamarinikonen (gör den transparent)
+            ActionBar.SetIcon(new ColorDrawable(Resources.GetColor(Android.Resource.Color.Transparent)));
             LoadApplication(new App());
+
         }
     }
 }

@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TestAppProjekt.View.HomeScreenMenu">
+
+  <!--<ContentPage.ToolbarItems>
+    <ToolbarItem Text="Menu" >
+      <ToolbarItem.Icon>
+        <OnPlatform x:TypeArguments="FileImageSource" iOS="MenuIcon.png" Android="MenuIcon.png" WinPhone="Assets/MenuIcon.png"/>
+      </ToolbarItem.Icon>
+    </ToolbarItem>
+  </ContentPage.ToolbarItems>-->
+
+  <ContentPage.Content>
+    <StackLayout >
+      <Button x:Name="MenuHome" Text="Home" Clicked="Home_OnClicked"/>
+      <Button x:Name="MenuEmployees" Text="Employees" Clicked="MenuEmployees_OnClicked"/>
+      <Button x:Name="MenuLocations" Text="Locations" Clicked="MenuLocations_OnClicked"/>
+      <Button x:Name="MenuTimeReports" Text="Time Reports" Clicked="MenuTimeReports_OnClicked"/>
+      <Button x:Name="MenuSettings" Text="Settings" Clicked="MenuSettings_OnClicked"/>
+      <Button x:Name="MenuLogout" Text="Logout" Clicked="MenuLogout_OnClicked"/>
+    </StackLayout>
+  </ContentPage.Content>
+
+</ContentPage>

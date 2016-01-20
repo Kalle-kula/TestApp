@@ -6,7 +6,6 @@
   <ContentPage.Content>
 
     <StackLayout Padding="5">
-      <Label Text="News" FontSize="30"/>
 
       <ListView x:Name ="NewsListView" ItemsSource="{Binding News}" ItemTapped="NewsListView_OnItemTapped">
         <ListView.ItemTemplate>
