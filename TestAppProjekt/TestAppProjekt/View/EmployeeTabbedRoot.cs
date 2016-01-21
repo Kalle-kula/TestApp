@@ -11,17 +11,12 @@ namespace TestAppProjekt.View
     {
         public EmployeeTabbedRoot()
         {
-            this.Children.Add(
-                new NavigationPage(new EmployeesPage())
-                {
-                    Title = "Employees"
-                });
 
-            this.Children.Add(
-                new NavigationPage(new HomeScreen())
-                {
-                    Title = "Home"
-                });
+            this.Children.Add(new EmployeeViewGeneral() { Title = "General" });
+            this.Children.Add(new EmployeeViewSkills() { Title = "Skills" });
+            this.Children.Add(new EmployeeViewProjects() { Title = "Projects" });
+            this.Children.Add(new EmployeeViewInfo() { Title = "Info" });
+            
         }
     }
 }

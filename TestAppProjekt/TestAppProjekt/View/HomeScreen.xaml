@@ -5,27 +5,42 @@
 
   <ContentPage.Content>
 
-    <StackLayout Padding="5">
+    <StackLayout Padding="10">
 
-      <ListView x:Name ="NewsListView" ItemsSource="{Binding News}" ItemTapped="NewsListView_OnItemTapped">
+      <ListView x:Name ="NewsListView" ItemsSource="{Binding News}" ItemTapped="NewsListView_OnItemTapped" >
         <ListView.ItemTemplate>
           <DataTemplate >
             <ViewCell >
               <ViewCell.View >
-                <StackLayout>
-                  <StackLayout Orientation="Horizontal">
-                    <Image Source="{Binding NewsImgUrl}"/>
-                    <StackLayout Orientation="Vertical">
-                    <Label Text="{Binding Subject}" FontSize="20"  />
-                    <Label Text="{Binding ShortNewsText}" FontSize="10" />
-                    </StackLayout>
-                  </StackLayout>
-                </StackLayout>
+                <Grid>
+                  <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                  </Grid.RowDefinitions>
+                  <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="4*"/>
+                  </Grid.ColumnDefinitions>
+                  <Label Grid.Row="0" Grid.Column="0" Grid.RowSpan="2" Text="Bild"/>
+                  <Label Grid.Row="0" Grid.Column="1" Text="{Binding Subject}" FontSize="17" />
+                  <Label Grid.Row="1" Grid.Column="1" Text="{Binding ShortNewsText}" FontSize="13" />
+                </Grid>
               </ViewCell.View>
             </ViewCell>
           </DataTemplate>
         </ListView.ItemTemplate>
       </ListView>
+      <Grid>
+        <Grid.RowDefinitions>
+          <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+          <ColumnDefinition Width="*"/>
+          <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Button Grid.Row="0" Grid.Column="0" x:Name="BtnGoToEmp" Text="Employees" Clicked="Employees_OnClicked"/>
+        <Button Grid.Row="0" Grid.Column="1" x:Name="BtnGoToTimeRep" Text="Time report" Clicked="Time_Report_OnClicked"/>
+      </Grid>
 
     </StackLayout>
 

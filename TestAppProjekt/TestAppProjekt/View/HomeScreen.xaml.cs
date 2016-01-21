@@ -1,4 +1,5 @@
-﻿using TestAppProjekt.Model;
+﻿using System;
+using TestAppProjekt.Model;
 using TestAppProjekt.ViewModel;
 using Xamarin.Forms;
 
@@ -22,5 +23,16 @@ namespace TestAppProjekt.View
                 Navigation.PushAsync(new NewsDetails(news));
             }
         }
+
+        private void Employees_OnClicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new NavigationPage(new EmployeeViewGeneral()));
+        }
+
+        private void Time_Report_OnClicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new NavigationPage(new EmployeeViewGeneral()));
+        }
+
     }
 }
