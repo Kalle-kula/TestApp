@@ -88,6 +88,12 @@
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\icon.png" />
     <AndroidResource Include="Resources\drawable-hdpi\icon.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_menu_white_24dp.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_menu_white_36dp.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_menu_white_48dp.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_add_white_24dp.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_add_white_36dp.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_add_white_48dp.png" />
     <AndroidResource Include="Resources\drawable-xhdpi\icon.png" />
     <AndroidResource Include="Resources\drawable-xxhdpi\icon.png" />
   </ItemGroup>

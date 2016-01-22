@@ -43,9 +43,6 @@
     <Compile Include="Properties\Annotations.cs" />
     <Compile Include="ViewModel\NewsListViewModel.cs" />
     <Compile Include="ViewModel\NewsViewModel.cs" />
-    <Compile Include="View\EmployeesPage.xaml.cs">
-      <DependentUpon>EmployeesPage.xaml</DependentUpon>
-    </Compile>
     <Compile Include="View\EmployeeTabbedRoot.cs" />
     <Compile Include="View\EmployeeViewGeneral.xaml.cs">
       <DependentUpon>EmployeeViewGeneral.xaml</DependentUpon>
@@ -104,12 +101,6 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="View\NewsDetails.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="View\EmployeesPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>

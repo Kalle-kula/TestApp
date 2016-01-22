@@ -6,7 +6,7 @@
   <!--<ContentPage.ToolbarItems>
     <ToolbarItem Text="Menu" >
       <ToolbarItem.Icon>
-        <OnPlatform x:TypeArguments="FileImageSource" iOS="MenuIcon.png" Android="MenuIcon.png" WinPhone="Assets/MenuIcon.png"/>
+        <OnPlatform x:TypeArguments="FileImageSource" iOS="MenuIcon.png" Android="ic_add_white_36dp.png" WinPhone="Assets/MenuIcon.png"/>
       </ToolbarItem.Icon>
     </ToolbarItem>
   </ContentPage.ToolbarItems>-->

@@ -8,9 +8,9 @@ using Xamarin.Forms;
 
 namespace TestAppProjekt.View
 {
-    public partial class EmployeesPage : ContentPage
+    public partial class EmployeeViewGeneral : ContentPage
     {
-        public EmployeesPage()
+        public EmployeeViewGeneral()
         {
             InitializeComponent();
         }

@@ -22,7 +22,7 @@ namespace TestAppProjekt
         },
                 new MainLink("Employees") {Command =new Command(o =>
             {
-                App.MasterDetailPage.Detail = new NavigationPage(new EmployeesPage());
+                App.MasterDetailPage.Detail = new NavigationPage(new HomeScreen());
                 App.MasterDetailPage.IsPresented = false;
                 
             })
