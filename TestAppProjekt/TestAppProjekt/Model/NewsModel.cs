@@ -35,9 +35,9 @@ namespace TestAppProjekt.Model
         
     }
 
-    public class NewsManager
+    //public class NewsManager
 
-    {
-        List<NewsModel> News { get; set; }
-    }
+    //{
+    //    List<NewsModel> News { get; set; }
+    //}
 }

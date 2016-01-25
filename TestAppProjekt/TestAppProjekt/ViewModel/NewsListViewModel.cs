@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using System.ComponentModel;
 using TestAppProjekt.Fakes;
 using TestAppProjekt.Model;
+using TestAppProjekt.Services;
 
 namespace TestAppProjekt.ViewModel
 {
@@ -31,18 +32,16 @@ namespace TestAppProjekt.ViewModel
                     ValidThrough = FakeNews.ValidThrough[i],
                 });
             }
+
+            //Anropet sen
+
+            //ServiceConsumer cs = new ServiceConsumer();
+            //Task<List<NewsModel>> _news = cs.GetAllNews();
+            //News = _news.Result;
+
         }
 
-        //private string CreateShortText(string createShortText)
-        //{
-        //    int maxLength = 50;
-        //    var newsText = FakeNews.NewsText;
-        //    if (newsText.)
-        //    {
-                
-        //    }
-
-        //}
+        
 
         public event PropertyChangedEventHandler PropertyChanged;
     }
